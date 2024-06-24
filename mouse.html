@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p id="one">hello world</p>
+    <div id="two">hello</div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $("#one").mouseenter(function(){
+            alert("you enter in p tag")
+        })
+    //    $("#two").hover(function(){
+    //     alert("helo hover")
+    //    })
+    })
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="one">welcome to jquery class</h1>
+    <button id="btn1">slide up</button><br>
+    <h1 id="two" style="display: none;">slide up</h1>
+    <button id="btn2">slide down</button><br><br><br>
+    <h1 id="three">slide toggle</h1>
+    <button id="btn3">toggle class</button><br>
+</body>
+</html>
+<script>
+     $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#one").slideUp(1000)
+        })
+        $("#btn2").click(function(){
+            $("#two").slideDown(1000)
+        })
+        $("#btn3").click(function(){
+            $("#three").slideToggle(2000)
+        })
+    })
+</script>

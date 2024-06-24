@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <script>
+        $(document).ready(function(){
+            $("input").keypress(function(){
+                alert("you have press key")
+            })
+            $("input").keyup(function(){
+                alert("you keyup")
+            })
+            $("input").keydown(function(){
+                alert("key down")
+            })
+        })
+    </script>
+</body>
+</html>

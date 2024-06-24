@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        #two{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="one">welcome</h1>
+    <button id="btn1">hide</button><br>
+    <h1 id="two">welcome</h1>
+    <button id="btn2">show</button><br>
+    <h1 id="th">hide and show</h1>
+    <button id="btn3">yesq dwdkw</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#one").hide(1000)
+        })
+        $("#btn2").click(function(){
+            $("#two").show(1000)
+        })
+        $("#btn3").click(function(){
+            $("#th").toggle(1000)
+        })
+
+    })
+</script>

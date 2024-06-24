@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .accordian{
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .header{
+            background-color: whitesmoke;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .content{
+            padding: 10px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="accordian">
+        <h1 class="header">section 1</h1>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus nesciunt
+            repellat, similique minima saepe harum doloribus voluptas totam ex eveniet nisi, neque ipsam iure qui minus
+            dolores culpa. Vel.</p>
+    </div>
+    <div class="accordian">
+        <h1 class="header">section 1</h1>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus nesciunt
+            repellat, similique minima saepe harum doloribus voluptas totam ex eveniet nisi, neque ipsam iure qui minus
+            dolores culpa. Vel.</p>
+    </div>
+    <div class="accordian">
+        <h1 class="header">section 1</h1>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus nesciunt
+            repellat, similique minima saepe harum doloribus voluptas totam ex eveniet nisi, neque ipsam iure qui minus
+            dolores culpa. Vel.</p>
+    </div>
+    <div class="accordian">
+        <h1 class="header">section 1</h1>
+        <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia necessitatibus nesciunt
+            repellat, similique minima saepe harum doloribus voluptas totam ex eveniet nisi, neque ipsam iure qui minus
+            dolores culpa. Vel.</p>
+    </div>
+
+</body>
+
+</html>
+<script>
+    $(document).ready(function(){
+        $(" .accordian .header").click(function(){
+            $(this).next(".content").slideToggle()
+        })
+    })
+</script>
